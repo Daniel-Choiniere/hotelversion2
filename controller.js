@@ -33,13 +33,13 @@ module.exports = function(app){
         });
     });
     
-    app.post('/todo', urlencodedParser, function(req, res){
-        // get data from the view and add it to mongoDB
-        var newTodo = Todo(req.body).save(function(err, data){
-            if (err) throw err;
-            res.json(data);
-        })
-    });
+    // // app.post('/todo', urlencodedParser, function(req, res){
+    // //     // get data from the view and add it to mongoDB
+    // //     var newTodo = Todo(req.body).save(function(err, data){
+    // //         if (err) throw err;
+    // //         res.json(data);
+    // //     })
+    // });
     
     app.delete('/todo/:item', function(req, res){
         // delete the requested item from mongoDB

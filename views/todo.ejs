@@ -3,8 +3,14 @@
 <html>
     <head>
         <title>Welcome to CareerDevs Hotel</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--<link rel="stylesheet" type="text/css" href="styles.css">-->
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-         <script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        
+        <script>
             $(document).ready(function(){
             
               $('form').on('submit', function(){
@@ -40,21 +46,107 @@
             
             });
         </script>
+        
+        <style>
+                    /*   Full page background "watermark"   */
+            /*body {*/
+            /*    background: url(https://images.pexels.com/photos/62693/pexels-photo-62693.jpeg?auto=compress&cs=tinysrgb&h=350); */
+            /*    background-size: cover;*/
+            /*}*/
+            #maintitle {
+                text-align: center;
+                color: white;
+                background-color: black;
+                padding-top: 20px;
+                font-family: arial black;
+            }
+    
+            #subtitle {
+                text-align: center;
+                color: white;
+                background-color: black;
+                margin-top: -15px;
+                padding-bottom: 20px;
+            }
+            
+            .navbar-text {
+                color: #333435;
+                font-family: Courier New;
+                font-size: 14px;
+                font-weight: bolder;
+            }
+            
+            .room-choice-title {
+                font-family: Courier New;
+                font-weight: bolder;
+                font-size: 24px;
+                color: #333435;
+                padding-left: 50px;
+                width: 500px;
+            }
+            
+            #avail-room-list {
+                padding-left:50px;
+                width: 750px;
+            }
+            
+            #avail-room_list form:after{
+                margin: 0;
+                content: '';
+                display: block;
+                clear: both;
+            }
+            
+            li {
+                font-size:25px;   
+                list-style: none;
+            }
+            
+            li:hover {
+                cursor: pointer;
+                font-weight: bolder;
+                font-size: 50px;
+                color: red;
+            }
+        
+            
+        </style>
     </head>
     
     <body>
-        <h1>CareerDevs Hotel</h1>
-        <h3>Available Rooms</h3>
-        <div id="todo-table">
-            <form>
-                <input type="text" name="item" placeholder="Add new item..." required />
-                <button type="submit">Add Item</button>
-            </form>
+                <!--TOP TITLE AND NAVBAR SECTION-->
+    <h1 id="maintitle">Welcome to the Div'inn!</h1>
+    <h4 id="subtitle">The most "functional" hotel on the Silicon Rhode</h4>
+    
+    <nav class="nav justify-content-center">
+        <a class="nav-item nav-link" href="#"><span class="navbar-text">AMENITIES</span></a>
+        <a class="nav-item nav-link" href="#"><span class="navbar-text">ROOMS</span></a>
+        <a class="nav-item nav-link" href="#"><span class="navbar-text">MEETINGS</span></a>
+        <a class="nav-item nav-link" href="#"><span class="navbar-text">WEDDINGS</span></a>
+        <a class="nav-item nav-link" href="#"><span class="navbar-text">PHOTOS</span></a>
+        <a class="nav-item nav-link" href="#"><span class="navbar-text">CONTACT</span></a>
+    </nav>
+
+                        <!--LARGE MAIN HERO IMAGE-->
+    <section class="home-hero" style="background-image: url(https://images.pexels.com/photos/791810/pexels-photo-791810.jpeg?auto=compress&cs=tinysrgb&h=350); height: 400px; background-size: cover; background-position-y: center">
+    </section>
+    </br>
+    
+    <h4 class="room-choice-title">CHOOSE FROM ONE OF OUR WORLD CLASS ROOMS </h4>
+        <div id="avail-room-list">
+            <!--<form>-->
+            <!--    <input type="text" name="item" placeholder="Add new item..." required />-->
+            <!--    <button type="submit">Reserve Room</button>-->
+            <!--</form>-->
             <ul>
                 <% for (var i=0; i<todos.length; i++) { %>
                     <li><%= todos[i].item %></li>
                 <% } %>
             </ul>
         </div>
+        </br>
+        </br>
+        </br>
+        </br>
     </body>
 </html>
