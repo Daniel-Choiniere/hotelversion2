@@ -51,11 +51,6 @@
         </script>
       
         <style>
-                    /*   Full page background "watermark"   */
-            /*body {*/
-            /*    background: url(https://images.pexels.com/photos/62693/pexels-photo-62693.jpeg?auto=compress&cs=tinysrgb&h=350); */
-            /*    background-size: cover;*/
-            /*}*/
             #maintitle {
                 text-align: center;
                 color: white;
@@ -111,7 +106,7 @@
         
             #avail-room-list {
                 padding-left:200px;
-                width: 200px;
+                width: 1000px;
             }
             
             #avail-room_list form:after{
@@ -133,17 +128,14 @@
                 color: #5475A0;
             }
             
-            .item {
-                width: 200px;
-                height: 200px;
-                margin: 50px auto;
-                padding-top: 75px;
-                background: #ccc;
-                text-align: center;
-                color: #FFF;
-                font-size: 3em;
-                }
-        
+            .centered {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            
+    
             /*.hiddenimg {*/
             /*    display: none;*/
             /*}*/
@@ -197,33 +189,34 @@
     </nav>
 
                         <!--LARGE MAIN HERO IMAGE-->
-    <section class="home-hero" style="background-image: url(https://images.pexels.com/photos/791810/pexels-photo-791810.jpeg?auto=compress&cs=tinysrgb&h=350); height: 390px; background-size: cover; background-position-y: center">
+    <section class="home-hero" style="background-image: url(https://images.pexels.com/photos/791810/pexels-photo-791810.jpeg?auto=compress&cs=tinysrgb&h=350); height: 500px; background-size: cover; background-position-y: center">
     </section>
     </br>
     <div class="card-deck">
-      <div class="card">
-        <img class="card-img-top" src="https://images.pexels.com/photos/271616/pexels-photo-271616.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Card image cap">
+      <div class="card" data-aos="zoom-in-up">
+        <img class="card-img-top" src="https://images.pexels.com/photos/271616/pexels-photo-271616.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="King room">
         <div class="card-body">
           <h5 class="card-title">King</h5>
-          <p class="card-text">Designed to inspire rest and relaxation, our sleek, modern guest rooms create a feeling of home with peaceful color tones and city chic décor. Each room features a king-sized bed, "smart room technology" and full-size bathroom with granite counter tops and marble floors.</p>
+          <p class="card-text">Designed to inspire rest and relaxation, our sleek, modern guest rooms create a feeling of home with peaceful color tones and city chic décor. Each room features a king-sized bed, "smart room technology" and full-size bathroom with granite counter tops and marble floors. Rooms poolside are also available.</p>
         </div>
       </div>
-      <div class="card">
-        <img class="card-img-top" src="https://images.unsplash.com/photo-1515362778563-6a8d0e44bc0b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Card image cap">
+      <div class="card" data-aos="zoom-in-up">
+        <img class="card-img-top" src="https://images.unsplash.com/photo-1515362778563-6a8d0e44bc0b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Suite Room">
         <div class="card-body">
           <h5 class="card-title">Suite</h5>
-          <p class="card-text">Located in the Lodge's International Wing, suites have either a king or two queen-sized beds and views of The Cucina courtyard. Each features an oversized bathroom with a double vanity and marble floors.</p>
+          <p class="card-text">Located in the Lodge's International Wing, suites have either a king or two queen-sized beds and some rooms have views of the magnificent pool. Each features an oversized bathroom with a double vanity and marble floors.</p>
         </div>
       </div>
-      <div class="card">
-        <img class="card-img-top" src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Card image cap">
+      <div class="card" data-aos="zoom-in-up">
+        <img class="card-img-top" src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Studio room">
         <div class="card-body">
           <h5 class="card-title">Studio</h5>
           <p class="card-text">Luxury One Bedroom Studios feature a bedroom with king-sized bed, an oversized bathroom with double vanity and marble floors; and a separate sitting area with gas fireplace, and a wet bar. Each studio also offers spectacular views of the city.</p>
         </div>
       </div>
     </div>
-    
+    </br>
+    </br>
                         <!--IMAGE DISPLAYED ON HOVER-->
         <!--<div>-->
         <!-- <p>-->
@@ -244,7 +237,7 @@
     
     
                         <!--LIST OF AVAILABLE ROOMS FOR USER TO CHOOSE FROM-->
-    <h4 class="room-choice-title">CHOOSE FROM ONE OF OUR AVAILABLE TECH SAVVY ROOMS. </h4>
+    <h4 class="room-choice-title" data-aos="zoom-in">CHOOSE FROM ONE OF OUR AVAILABLE TECH SAVVY ROOMS. </h4>
         <div id="avail-room-list">
             <!--<form>-->
             <!--    <input type="text" name="item" placeholder="Add new item..." required />-->
@@ -266,13 +259,8 @@
         
         <script>
             AOS.init({
-                duration: 1200,
+                duration: 1300,
             })
         </script>
-        <div class="item" data-aos="fade-up">1</div>
-        <div class="item" data-aos="fade-down">2</div>
-        <div class="item" data-aos="fade-right">3</div>
-        <div class="item" data-aos="fade-left">4</div>
-        
     </body>
 </html>
