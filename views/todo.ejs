@@ -72,22 +72,35 @@
             .navbar-text {
                 color: #333435;
                 font-family: Courier New;
-                font-size: 14px;
+                font-size: 19px;
+                font-weight: bold;
+            }
+            
+            .navbar-text:hover {
+                color: red;
                 font-weight: bolder;
+            }
+            
+            .card-title {
+                font-size: 30px;
+            }
+            
+            .card-text {
+                font-size: 16px;
             }
             
             .room-choice-title {
                 font-family: Courier New;
                 font-weight: bolder;
-                font-size: 24px;
+                font-size: 30px;
                 color: #333435;
-                padding-left: 50px;
-                width: 500px;
+                padding-left: 100px;
+                width: 700px;
             }
-            
+        
             #avail-room-list {
-                padding-left:50px;
-                width: 750px;
+                padding-left:200px;
+                width: 200px;
             }
             
             #avail-room_list form:after{
@@ -98,24 +111,58 @@
             }
             
             li {
-                font-size:25px;   
+                font-size:35px;   
                 list-style: none;
             }
             
             li:hover {
                 cursor: pointer;
                 font-weight: bolder;
-                font-size: 50px;
+                font-size: 55px;
                 color: red;
             }
         
+            /*.hiddenimg {*/
+            /*    display: none;*/
+            /*}*/
+            
+            /*.hiddentxt {*/
+            /*    font-weight: bold;*/
+            /*    color: #F00;*/
+            /*}*/
+            
+            /*.hiddentxt a {*/
+            /*    color: #F00;*/
+            /*    text-decoration: none;*/
+            /*}*/
+            
+            /*.hiddenclick {*/
+            /*    font-weight: bold;*/
+            /*    color: #F00;*/
+            /*    text-decoration: none;*/
+            /*    cursor: pointer;*/
+            /*}*/
+            
+            /*.hiddenclick a {*/
+            /*    color: #F00;*/
+            /*    text-decoration: none;*/
+            /*}*/
+            
+            /*.hiddenclick a:visited {*/
+            /*    color: #F00;*/
+            /*    text-decoration: none;*/
+            /*}*/
+            
+            /*.hiddentxt:hover ~ .hiddenimg {*/
+            /*    display: block;*/
+            /*}*/
             
         </style>
     </head>
     
     <body>
                 <!--TOP TITLE AND NAVBAR SECTION-->
-    <h1 id="maintitle">Welcome to the Div'inn!</h1>
+    <h1 id="maintitle">Welcome to the Code Rhode Hotel</h1>
     <h4 id="subtitle">The most "functional" hotel on the Silicon Rhode</h4>
     
     <nav class="nav justify-content-center">
@@ -128,16 +175,63 @@
     </nav>
 
                         <!--LARGE MAIN HERO IMAGE-->
-    <section class="home-hero" style="background-image: url(https://images.pexels.com/photos/791810/pexels-photo-791810.jpeg?auto=compress&cs=tinysrgb&h=350); height: 400px; background-size: cover; background-position-y: center">
+    <section class="home-hero" style="background-image: url(https://images.pexels.com/photos/791810/pexels-photo-791810.jpeg?auto=compress&cs=tinysrgb&h=350); height: 390px; background-size: cover; background-position-y: center">
     </section>
     </br>
+    <div class="card-deck">
+      <div class="card">
+        <img class="card-img-top" src="https://images.pexels.com/photos/271616/pexels-photo-271616.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">King</h5>
+          <p class="card-text">Designed to inspire rest and relaxation, our sleek, modern guest rooms create a feeling of home with peaceful color tones and city chic décor. Each room features a king-sized bed, "smart room technology" and full-size bathroom with granite counter tops and marble floors.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="https://images.unsplash.com/photo-1515362778563-6a8d0e44bc0b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Suite</h5>
+          <p class="card-text">Located in the Lodge's International Wing, suites have either a king or two queen-sized beds and views of The Cucina courtyard. Each features an oversized bathroom with a double vanity and marble floors.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Studio</h5>
+          <p class="card-text">Luxury One Bedroom Studios feature a bedroom with king-sized bed, an oversized bathroom with double vanity and marble floors; and a separate sitting area with gas fireplace, and a wet bar. Each studio also offers spectacular views of the city.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
     
-    <h4 class="room-choice-title">CHOOSE FROM ONE OF OUR WORLD CLASS ROOMS </h4>
+                        <!--IMAGE DISPLAYED ON HOVER-->
+        <!--<div>-->
+        <!-- <p>-->
+        <!--    Hover to see a Queen Room<span class="hiddentxt"><a href="https://images.pexels.com/photos/271616/pexels-photo-271616.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">banana</a></span><span class="hiddenimg"><img src="https://images.pexels.com/photos/271616/pexels-photo-271616.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="250" /></span>.-->
+        <!--  </p>-->
+        <!--  <p style="float:right">-->
+        <!--    It <span class="hiddentxt"><a href="http://www.renders-graphiques.fr/image/upload/normal/element_glace_creme_14.png">disjoins</a></span><span class="hiddenimg"><img src="http://www.renders-graphiques.fr/image/upload/normal/element_glace_creme_14.png" width="250" /></span>    the sentence when the image and text are next to each other in HTML.-->
+        <!--  </p>-->
+        <!--  <p>To fix this, position the image at the end if the <span class="hiddentxt"><a href = "http://www.renders-graphiques.fr/image/upload/normal/element_glace_creme_14.png">element</a></span>, and use the ~ selector in the CSS.<span class="hiddenimg"><img src="http://www.renders-graphiques.fr/image/upload/normal/element_glace_creme_14.png" width="250" /></span>-->
+        <!--  </p>-->
+        <!--  <p>-->
+        <!--    Let's see if it works with <span class="hiddentxt" onmouseover="vidPlay()" onmouseout="vidPause()"><a href="https://mtc.cdn.vine.co/r/videos/ECBC329ACC1050514912117440512_1c6599f182f.4.6.16444000809832514200.mp4">videos</a></span>.-->
+        <!--    <span class="hiddenimg"><video id="video1" loop>-->
+        <!--      <source src="https://mtc.cdn.vine.co/r/videos/ECBC329ACC1050514912117440512_1c6599f182f.4.6.16444000809832514200.mp4" type="video/mp4">-->
+        <!--      </video></span>-->
+        <!--  </P>-->
+        <!--</div>-->
+    
+    
+                        <!--LIST OF AVAILABLE ROOMS FOR USER TO CHOOSE FROM-->
+    <h4 class="room-choice-title">CHOOSE FROM ONE OF OUR AVAILABLE TECH SAVVY ROOMS. </h4>
         <div id="avail-room-list">
             <!--<form>-->
             <!--    <input type="text" name="item" placeholder="Add new item..." required />-->
             <!--    <button type="submit">Reserve Room</button>-->
             <!--</form>-->
+                        <!--Populates list of available rooms from database-->
             <ul>
                 <% for (var i=0; i<todos.length; i++) { %>
                     <li><%= todos[i].item %></li>

@@ -20,11 +20,10 @@ var urlencodedParser = bodyPasrser.urlencoded({extended: false});
 
 module.exports = function(app){
     
-    app.get('/todo', function(req, res){
+    app.get('/', function(req, res){
         // get data from mongodb and pass it to view
         
-        // if i want to retrieve a certain item from the datatbase
-        // Example -- Todo.find({item: 'buy flowers'});
+        // if i want to retrieve a certain item from the datatbase Example -- Todo.find({item: 'buy flowers'});
         
         // if i want to retrieve all items in database
         Todo.find({}, function(err, data){
