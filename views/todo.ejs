@@ -51,6 +51,10 @@
         </script>
       
         <style>
+            body {
+                background-color: #eff0f2;    
+            }
+            
             #maintitle {
                 text-align: center;
                 color: white;
@@ -90,6 +94,10 @@
                 color: #1C1349;
             }
             
+            .card-body {
+                background-color: #eff0f2;    
+            }
+            
             .card-text {
                 font-size: 16px;
                 font-family: Courier;
@@ -106,7 +114,7 @@
         
             #avail-room-list {
                 padding-left:200px;
-                width: 1000px;
+                width: 750px;
             }
             
             #avail-room_list form:after{
@@ -134,43 +142,6 @@
                 left: 50%;
                 transform: translate(-50%, -50%);
             }
-            
-    
-            /*.hiddenimg {*/
-            /*    display: none;*/
-            /*}*/
-            
-            /*.hiddentxt {*/
-            /*    font-weight: bold;*/
-            /*    color: #F00;*/
-            /*}*/
-            
-            /*.hiddentxt a {*/
-            /*    color: #F00;*/
-            /*    text-decoration: none;*/
-            /*}*/
-            
-            /*.hiddenclick {*/
-            /*    font-weight: bold;*/
-            /*    color: #F00;*/
-            /*    text-decoration: none;*/
-            /*    cursor: pointer;*/
-            /*}*/
-            
-            /*.hiddenclick a {*/
-            /*    color: #F00;*/
-            /*    text-decoration: none;*/
-            /*}*/
-            
-            /*.hiddenclick a:visited {*/
-            /*    color: #F00;*/
-            /*    text-decoration: none;*/
-            /*}*/
-            
-            /*.hiddentxt:hover ~ .hiddenimg {*/
-            /*    display: block;*/
-            /*}*/
-            
         </style>
     </head>
     
@@ -217,27 +188,9 @@
     </div>
     </br>
     </br>
-                        <!--IMAGE DISPLAYED ON HOVER-->
-        <!--<div>-->
-        <!-- <p>-->
-        <!--    Hover to see a Queen Room<span class="hiddentxt"><a href="https://images.pexels.com/photos/271616/pexels-photo-271616.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">banana</a></span><span class="hiddenimg"><img src="https://images.pexels.com/photos/271616/pexels-photo-271616.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="250" /></span>.-->
-        <!--  </p>-->
-        <!--  <p style="float:right">-->
-        <!--    It <span class="hiddentxt"><a href="http://www.renders-graphiques.fr/image/upload/normal/element_glace_creme_14.png">disjoins</a></span><span class="hiddenimg"><img src="http://www.renders-graphiques.fr/image/upload/normal/element_glace_creme_14.png" width="250" /></span>    the sentence when the image and text are next to each other in HTML.-->
-        <!--  </p>-->
-        <!--  <p>To fix this, position the image at the end if the <span class="hiddentxt"><a href = "http://www.renders-graphiques.fr/image/upload/normal/element_glace_creme_14.png">element</a></span>, and use the ~ selector in the CSS.<span class="hiddenimg"><img src="http://www.renders-graphiques.fr/image/upload/normal/element_glace_creme_14.png" width="250" /></span>-->
-        <!--  </p>-->
-        <!--  <p>-->
-        <!--    Let's see if it works with <span class="hiddentxt" onmouseover="vidPlay()" onmouseout="vidPause()"><a href="https://mtc.cdn.vine.co/r/videos/ECBC329ACC1050514912117440512_1c6599f182f.4.6.16444000809832514200.mp4">videos</a></span>.-->
-        <!--    <span class="hiddenimg"><video id="video1" loop>-->
-        <!--      <source src="https://mtc.cdn.vine.co/r/videos/ECBC329ACC1050514912117440512_1c6599f182f.4.6.16444000809832514200.mp4" type="video/mp4">-->
-        <!--      </video></span>-->
-        <!--  </P>-->
-        <!--</div>-->
-    
-    
-                        <!--LIST OF AVAILABLE ROOMS FOR USER TO CHOOSE FROM-->
-    <h4 class="room-choice-title" data-aos="zoom-in">CHOOSE FROM ONE OF OUR AVAILABLE TECH SAVVY ROOMS. </h4>
+
+                <!--LIST OF AVAILABLE ROOMS FOR USER TO CHOOSE FROM-->
+    <h4 class="room-choice-title" data-aos="fade-down">CHOOSE FROM ONE OF OUR AVAILABLE TECH SAVVY ROOMS. </h4>
         <div id="avail-room-list">
             <!--<form>-->
             <!--    <input type="text" name="item" placeholder="Add new item..." required />-->
@@ -255,8 +208,12 @@
         </br>
         </br>
         </br>
-        </br>
-        
+        <!-- Image and text -->
+        <nav class="navbar">
+            <a class="navbar-brand" href="https://github.com/Daniel-Choiniere">
+            2019 Daniel Choiniere
+            </a>
+        </nav>
         <script>
             AOS.init({
                 duration: 1300,
