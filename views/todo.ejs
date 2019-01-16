@@ -6,6 +6,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <!--GOOGLE FONT API LINKS-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril Fatface">
+        <link href="https://fonts.googleapis.com/css?family=Marcellus+SC" rel="stylesheet">
         <!-- link to AOS stylesheet and JS-->
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -59,8 +62,9 @@
                 text-align: center;
                 color: white;
                 background-color: black;
-                padding-top: 20px;
+                padding-top: 35px;
                 font-family: arial black;
+                font-size: 40px;
             }
     
             #subtitle {
@@ -68,13 +72,14 @@
                 color: white;
                 background-color: black;
                 margin-top: -15px;
-                padding-bottom: 20px;
+                padding-bottom: 35px;
+                font-size: 25px;
             }
             
             .navbar-text {
                 color: #333435;
-                font-family: Courier New;
-                font-size: 19px;
+                font-family: 'Marcellus SC', serif;
+                font-size: 23px;
                 font-weight: bold;
             }
             
@@ -90,7 +95,7 @@
             .card-title {
                 font-size: 35px;
                 font-weight: bolder;
-                font-family: bookman;
+                font-family: Abril Fatface;
                 color: #1C1349;
             }
             
@@ -136,22 +141,16 @@
                 color: #5475A0;
             }
             
-            .centered {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-            }
         </style>
     </head>
     
     <body>
                 <!--TOP TITLE AND NAVBAR SECTION-->
-    <h1 id="maintitle">Welcome to the Code Rhode Hotel</h1>
+    <h1 id="maintitle">The Code Rhode Hotel</h1>
     <h4 id="subtitle">The most "functional" hotel on the Silicon Rhode</h4>
     
     <nav class="nav justify-content-center">
-        <a class="nav-item nav-link" href="#"><span class="navbar-text">AMENITIES</span></a>
+        <a class="nav-item nav-link" href="#"  data-aos-"zoom-in"><span class="navbar-text">AMENITIES</span></a>
         <a class="nav-item nav-link" href="#"><span class="navbar-text">ROOMS</span></a>
         <a class="nav-item nav-link" href="#"><span class="navbar-text">MEETINGS</span></a>
         <a class="nav-item nav-link" href="#"><span class="navbar-text">WEDDINGS</span></a>
@@ -160,7 +159,7 @@
     </nav>
 
                         <!--LARGE MAIN HERO IMAGE-->
-    <section class="home-hero" style="background-image: url(https://images.pexels.com/photos/791810/pexels-photo-791810.jpeg?auto=compress&cs=tinysrgb&h=350); height: 500px; background-size: cover; background-position-y: center">
+    <section class="home-hero" style="background-image: url(https://images.pexels.com/photos/791810/pexels-photo-791810.jpeg?auto=compress&cs=tinysrgb&h=350); height: 675px; background-size: cover; background-position-y: center">
     </section>
     </br>
     <div class="card-deck">
@@ -191,6 +190,7 @@
 
                 <!--LIST OF AVAILABLE ROOMS FOR USER TO CHOOSE FROM-->
     <h4 class="room-choice-title" data-aos="fade-down">CHOOSE FROM ONE OF OUR AVAILABLE TECH SAVVY ROOMS. </h4>
+    <a href="#" style="float: right; padding-right: 300px; font-size: 70px; font-family: 'Marcellus SC', serif; text-decoration: none; color: #1C1349" data-aos="fade-left">View Your Profile</a>
         <div id="avail-room-list">
             <!--<form>-->
             <!--    <input type="text" name="item" placeholder="Add new item..." required />-->
