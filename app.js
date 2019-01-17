@@ -3,6 +3,11 @@ var toDoController = require('./controller.js');
 
 var app = express();
 
+app.get('/profile/:name', function(req, res){
+    var data = {age:29, job: 'ninja'};
+    res.render('profile', {person: req.params.name, data: data});
+});
+
 // set up the template engine
 app.set('view engine', 'ejs');
 
